@@ -4,63 +4,64 @@ $(document).ready(function () {
 
  
 
+const currentTime = dayjs().format("HH");
+console.log(currentTime);
 
+  $("#currentDay").text(dayjs().format("dddd, MMM D, YYYY") )
 
-
-
-  const nineAM = localStorage.getItem("0900", "text");
+  const nineAM = localStorage.getItem("09", "text");
   if (nineAM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#09-text-area").text(nineAM);
   }
 
-  const tenAM = localStorage.getItem("1000", "text");
+  const tenAM = localStorage.getItem("10", "text");
   if (tenAM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#10-text-area").text(tenAM);
   }
 
-  const elevenAM = localStorage.getItem("1100", "text");
+  const elevenAM = localStorage.getItem("11", "text");
   if (elevenAM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#11-text-area").text(elevenAM);
   }
 
-  const twelvePM = localStorage.getItem("1200", "text");
+  const twelvePM = localStorage.getItem("12", "text");
   if (twelvePM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#12-text-area").text(twelvePM);
   }
 
-  const onePM = localStorage.getItem("1300", "text");
+  const onePM = localStorage.getItem("13", "text");
   if (onePM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#13-text-area").text(onePM);
   }
 
-  const twoPM = localStorage.getItem("1400", "text");
+  const twoPM = localStorage.getItem("14", "text");
   if (twoPM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#14-text-area").text(twoPM);
   }
 
-  const threePM = localStorage.getItem("1500", "text");
+  const threePM = localStorage.getItem("15", "text");
   if (threePM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#15-text-area").text(threePM);
   }
 
-  const fourPM = localStorage.getItem("1600", "text");
+  const fourPM = localStorage.getItem("16", "text");
   if (fourPM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#16-text-area").text(fourPM);
   }
 
-  const fivePM = localStorage.getItem("1700", "text");
+  const fivePM = localStorage.getItem("17", "text");
   if (fivePM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#17-text-area").text(fivePM);
   }
 
-  const sixPM = localStorage.getItem("1800", "text");
+  const sixPM = localStorage.getItem("18", "text");
   if (sixPM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#18-text-area").text(sixPM);
   }
 
-  const sevenPM = localStorage.getItem("1900", "text");
+  const sevenPM = localStorage.getItem("19", "text");
   if (sevenPM != "") {
-    $("#0900-text-area").text(nineAM);
+    $("#19-text-area").text(sevenPM);
   }
   // Save button click event to grab the text the user entered
   $(".row").on("click", ".saveBtn", function(e) {
