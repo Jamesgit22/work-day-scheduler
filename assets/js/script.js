@@ -2,13 +2,10 @@
 $(document).ready(function () {
   console.log("ready!");
 
- 
-
-const currentTime = dayjs().format("HH");
-console.log(currentTime);
-
+  // Display the date and time
   $("#currentDay").text(dayjs().format("dddd, MMM D, YYYY") )
 
+  // Condition block to get items from local storage and display in correct hour block.
   const nineAM = localStorage.getItem("09", "text");
   if (nineAM != "") {
     $("#09-text-area").text(nineAM);
@@ -71,6 +68,11 @@ console.log(currentTime);
     localStorage.setItem(this.dataset.hour, text);
   });
 
+//Current hour in two digit format
+const currentTime = dayjs().format("HH");
+
+
+//Condition blocks to change color of hour containers
 if ($("#hour-9").data("hour") < currentTime) {
   $("#hour-9").removeClass("present");
   $("#hour-9").addClass("past");
