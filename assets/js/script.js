@@ -70,58 +70,139 @@ console.log(currentTime);
     const text = timeText.val();
     localStorage.setItem(this.dataset.hour, text);
   });
- 
- 
 
+if ($("#hour-9").data("hour") < currentTime) {
+  $("#hour-9").removeClass("present");
+  $("#hour-9").addClass("past");
+} else if ($("#hour-9").data("hour") > currentTime) {
+  $("#hour-9").removeClass("past");
+  $("#hour-9").addClass("future");
+} else {
+  $("#hour-9").removeClass("future");
+  $("#hour-9").addClass("present");
+}
 
+if ($("#hour-10").data("hour") < currentTime) {
+  $("#hour-10").removeClass("present");
+  $("#hour-10").addClass("past");
+} else if ($("#hour-10").data("hour") > currentTime) {
+  $("#hour-10").removeClass("past");
+  $("#hour-10").addClass("future");
+} else {
+  $("#hour-10").removeClass("future");
+  $("#hour-10").addClass("present");
+}
 
+if ($("#hour-11").data("hour") < currentTime) {
+  $("#hour-11").removeClass("present");
+  $("#hour-11").addClass("past");
+} else if ($("#hour-11").data("hour") > currentTime) {
+  $("#hour-11").removeClass("past");
+  $("#hour-11").addClass("future");
+} else {
+  $("#hour-11").removeClass("future");
+  $("#hour-11").addClass("present");
+}
 
+if ($("#hour-12").data("hour") < currentTime) {
+  $("#hour-12").removeClass("present");
+  $("#hour-12").addClass("past");
+} else if ($("#hour-12").data("hour") > currentTime) {
+  $("#hour-12").removeClass("past");
+  $("#hour-12").addClass("future");
+} else {
+  $("#hour-12").removeClass("future");
+  $("#hour-12").addClass("present");
+}
 
+if ($("#hour-13").data("hour") < currentTime) {
+  $("#hour-13").removeClass("present");
+  $("#hour-13").addClass("past");
+  console.log("yep");
+} else if ($("#hour-13").data("hour") > currentTime) {
+  $("#hour-13").removeClass("past");
+  $("#hour-13").addClass("future");
+  console.log("yep");
+} else {
+  $("#hour-13").removeClass("future");
+  $("#hour-13").addClass("present");
+}
 
+if ($("#hour-14").data("hour") < currentTime) {
+  $("#hour-14").removeClass("present");
+  $("#hour-14").addClass("past");
+} else if ($("#hour-14").data("hour") > currentTime) {
+  $("#hour-14").removeClass("past");
+  $("#hour-14").addClass("future");
+} else {
+  $("#hour-14").removeClass("future");
+  $("#hour-14").addClass("present");
+}
 
+if ($("#hour-15").data("hour") < currentTime) {
+  $("#hour-15").removeClass("present");
+  $("#hour-15").addClass("past");
+} else if ($("#hour-15").data("hour") > currentTime) {
+  $("#hour-15").removeClass("past");
+  $("#hour-15").addClass("future");
+} else {
+  $("#hour-15").removeClass("future");
+  $("#hour-15").addClass("present");
+}
 
+if ($("#hour-16").data("hour") < currentTime) {
+  $("#hour-16").removeClass("present");
+  $("#hour-16").addClass("past");
+} else if ($("#hour-16").data("hour") > currentTime) {
+  $("#hour-16").removeClass("past");
+  $("#hour-16").addClass("future");
+} else {
+  $("#hour-16").removeClass("future");
+  $("#hour-16").addClass("present");
+}
 
+if ($("#hour-17").data("hour") < currentTime) {
+  $("#hour-17").removeClass("present");
+  $("#hour-17").addClass("past");
+} else if ($("#hour-17").data("hour") > currentTime) {
+  $("#hour-17").removeClass("past");
+  $("#hour-17").addClass("future");
+} else {
+  $("#hour-17").removeClass("future");
+  $("#hour-17").addClass("present");
+}
 
+if ($("#hour-18").data("hour") < currentTime) {
+  $("#hour-18").removeClass("present");
+  $("#hour-18").addClass("past");
+} else if ($("#hour-18").data("hour") > currentTime) {
+  $("#hour-18").removeClass("past");
+  $("#hour-18").addClass("future");
+} else {
+  $("#hour-18").removeClass("future");
+  $("#hour-18").addClass("present");
+}
 
+if ($("#hour-19").data("hour") < currentTime) {
+  $("#hour-19").removeClass("present");
+  $("#hour-19").addClass("past");
+} else if ($("#hour-19").data("hour") > currentTime) {
+  $("#hour-19").removeClass("past");
+  $("#hour-19").addClass("future");
+} else {
+  $("#hour-19").removeClass("future");
+  $("#hour-19").addClass("present");
+}
 
-
-
-
-
-
-
-
-  // TODO: Add a listener for click events on the save button. This code should
-    // use the id in the containing time-block as a key to save the user input in
-    // local storage. HINT: What does `this` reference in the click listener
-    // function? How can DOM traversal be used to get the "hour-x" id of the
-    // time-block containing the button that was clicked? How might the id be
-    // useful when saving the description in local storage?
-    //
-    // TODO: Add code to apply the past, present, or future class to each time
-    // block by comparing the id to the current hour. HINTS: How can the id
-    // attribute of each time-block be used to conditionally add or remove the
-    // past, present, and future classes? How can Day.js be used to get the
-    // current hour in 24-hour time?
-    //
-    // TODO: Add code to get any user input that was saved in localStorage and set
-    // the values of the corresponding textarea elements. HINT: How can the id
-    // attribute of each time-block be used to do this?
-    //
-    // TODO: Add code to display the current date in the header of the page.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if ($("#hour-10").data("hour") < currentTime) {
+  $("#hour-10").removeClass("present");
+  $("#hour-10").addClass("past");
+} else if ($("#hour-10").data("hour") > currentTime) {
+  $("#hour-10").removeClass("past");
+  $("#hour-10").addClass("future");
+} else {
+  $("#hour-10").removeClass("future");
+  $("#hour-10").addClass("present");
+}
 
 });
