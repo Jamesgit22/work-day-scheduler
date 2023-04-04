@@ -4,16 +4,70 @@ $(document).ready(function () {
 
  
 
+
+
+
+
+  const nineAM = localStorage.getItem("0900", "text");
+  if (nineAM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const tenAM = localStorage.getItem("1000", "text");
+  if (tenAM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const elevenAM = localStorage.getItem("1100", "text");
+  if (elevenAM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const twelvePM = localStorage.getItem("1200", "text");
+  if (twelvePM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const onePM = localStorage.getItem("1300", "text");
+  if (onePM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const twoPM = localStorage.getItem("1400", "text");
+  if (twoPM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const threePM = localStorage.getItem("1500", "text");
+  if (threePM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const fourPM = localStorage.getItem("1600", "text");
+  if (fourPM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const fivePM = localStorage.getItem("1700", "text");
+  if (fivePM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const sixPM = localStorage.getItem("1800", "text");
+  if (sixPM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
+
+  const sevenPM = localStorage.getItem("1900", "text");
+  if (sevenPM != "") {
+    $("#0900-text-area").text(nineAM);
+  }
   // Save button click event to grab the text the user entered
   $(".row").on("click", ".saveBtn", function(e) {
     e.stopPropagation();
     const timeText = $(this).closest(".time-block").find(".time-text");
     const text = timeText.val();
-    console.log(text);
-    this.dataset.textContent = text;
-    console.log(this.dataset);
-
-    // const storedTodo = 
+    localStorage.setItem(this.dataset.hour, text);
   });
  
  
